@@ -1,79 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
 <head>
-    <title>Website FAHRY</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #087;
-    color: #FF0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-table {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
-}
+    <title>Website FAHRY - Berita Krakatau</title>
 
-<head>a:hover {
-    color: #b71c1c;
-}
+    <style>
+        /* PENGATURAN DASAR */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #edf2f5;
+            color: #800000;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
 
+        /* TABEL */
+        table {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
+            border-collapse: collapse;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
 
+        /* HEADER */
+        .header {
+            background-color: #800000;
+            color: #ffffff;
+        }
 
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 36px;
+        }
 
+        .header i {
+            color: #ffe0e0;
+        }
 
-table {
-    border-radius: 15px;
-    overflow: hidden;
-}
-</style>
+        /* MENU NAVIGASI */
+        .menu {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        a {
+            color: #800000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #b71c1c;
+            text-decoration: underline;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        /* KONTEN BERITA */
+        .konten {
+            width: 100%;
+        }
+
+        .konten td {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .konten h2 {
+            margin-top: 0;
+            color: #800000;
+        }
+
+        .berita {
+            padding-left: 25px;
+            text-align: justify;
+        }
+
+        .berita li {
+            padding-left: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background-color: #e0f2f1;
+            color: #333333;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #00695c;
+        }
+
+        .sidebar a {
+            color: #00695c;
+            overflow-wrap: anywhere;
+        }
+
+        .sidebar a:hover {
+            color: #004d40;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        .footer td {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: right;
+            padding: 12px;
+        }
+
+        /* TAMPILAN HP */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 27px;
+            }
+
+            .menu td {
+                padding: 8px;
+            }
+
+            .menu a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .konten td {
+                padding: 10px;
+            }
+
+            .konten h2 {
+                font-size: 20px;
+            }
+
+            .berita {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
 <body>
 
     <!-- HEADER -->
-    <table width="100%" border="1" cellspacing="0" cellpadding="20">
-        <tr bgcolor="##FF0000">
+    <table class="header" width="100%" border="1"
+        cellspacing="0" cellpadding="20">
+
+        <tr>
             <td align="center" height="150">
                 <h1>Website Fahry</h1>
                 <i>jangan melirik nnti tertarik.</i>
             </td>
         </tr>
+
     </table>
 
     <!-- MENU -->
-    <table width="90%" border="1" cellspacing="0" cellpadding="5">
+    <table class="menu" width="90%" border="1"
+        cellspacing="0" cellpadding="5">
+
         <tr>
             <td>
-                <a href="index.html">Beranda</a> <Tentang saya.html</Tentang>
-                   
-                
-                <a href="Tentang saya.html">Tentang Saya</a> 
-                <a href="Sekolahku.html">Sekolahku</a> 
-                <a href="Syair lagu.html">Syair Lagu</a
-                
+                <a href="index.html">Beranda</a>
+                <a href="Tentang saya.html">Tentang Saya</a>
+                <a href="Sekolahku.html">Sekolahku</a>
+                <a href="Syair lagu.html">Syair Lagu</a>
             </td>
         </tr>
+
     </table>
 
     <!-- ISI WEBSITE -->
-    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+    <table class="konten" border="1"
+        cellspacing="0" cellpadding="8">
+
         <tr>
 
             <!-- BAGIAN UTAMA -->
             <td width="70%" valign="top">
 
-                <h2>LOMBA DKV</h2>
-                <ul>
-                    <li> smk salah satu melaksanakan lomba dkv lomba ini sangat menguntungkan bagi murid murid yang berprestasi dan sebagai ajang adu bakat dalam bidang kesenian digital dan budaya</li>
+                <h2>BERITA KRAKATAU</h2>
+
+                <ul class="berita">
+                    <li>
+                        Gunung Anak Krakatau di Selat Sunda mengalami
+                        serangkaian erupsi besar yang memuncak pada
+                        tanggal 4 hingga 6 September 2026. Letusan ini
+                        mengeluarkan abu vulkanik pekat, memuntahkan
+                        lava pijar, serta memicu suara dentuman keras
+                        yang terdengar hingga beberapa kilometer.
+                    </li>
                 </ul>
-               
 
             </td>
 
             <!-- SIDEBAR -->
-            <td width="30%" bgcolor="#088F8F" valign="top">
+            <td class="sidebar" width="30%" valign="top">
 
-                <h3>Tautan eksternal</h3>
+                <h3>Tautan Eksternal</h3>
 
                 <ol>
                     <li>
@@ -93,9 +239,12 @@ table {
                             Google
                         </a>
                     </li>
-                    <a href="https://www.instagram.com/ahmadfahryi?stkn=MWlsaWxtdmZvY3JzeA==">4.instagram</a>
-                    
-                   
+
+                    <li>
+                        <a href="https://www.instagram.com/ahmadfahryi?stkn=MWlsaWxtdmZvY3JzeA==">
+                            Instagram
+                        </a>
+                    </li>
                 </ol>
 
             </td>
@@ -104,12 +253,15 @@ table {
     </table>
 
     <!-- FOOTER -->
-    <table width="100%" border="1" cellspacing="0" cellpadding="5">
+    <table class="footer" width="100%" border="1"
+        cellspacing="0" cellpadding="5">
+
         <tr>
             <td align="right">
-                .
+                @Ahmad fahry ilhami
             </td>
         </tr>
+
     </table>
 
 </body>
