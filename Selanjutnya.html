@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Website FAHRY - Sekolahku</title>
+    <title>Website FAHRY - Berita Krakatau</title>
 
     <style>
         /* PENGATURAN DASAR */
@@ -15,7 +15,7 @@
             color: #800000;
             margin: 0;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* TABEL */
@@ -71,7 +71,7 @@
             margin: 5px 10px;
         }
 
-        /* KONTEN UTAMA */
+        /* KONTEN BERITA */
         .konten {
             width: 100%;
         }
@@ -81,24 +81,19 @@
             vertical-align: top;
         }
 
-        h2 {
-            color: #800000;
+        .konten h2 {
             margin-top: 0;
+            color: #800000;
         }
 
-        .deskripsi {
+        .berita {
+            padding-left: 25px;
             text-align: justify;
         }
 
-        /* FOTO SEKOLAH */
-        .foto-sekolah {
-            display: block;
-            width: 350px;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid #800000;
-            margin-top: 15px;
+        .berita li {
+            padding-left: 5px;
+            margin-bottom: 15px;
         }
 
         /* SIDEBAR */
@@ -133,7 +128,7 @@
             padding: 12px;
         }
 
-        /* RESPONSIVE UNTUK HP */
+        /* TAMPILAN HP */
         @media screen and (max-width: 600px) {
             body {
                 padding: 10px;
@@ -160,8 +155,8 @@
                 font-size: 20px;
             }
 
-            .foto-sekolah {
-                width: 100%;
+            .berita {
+                padding-left: 20px;
             }
         }
     </style>
@@ -206,20 +201,18 @@
             <!-- BAGIAN UTAMA -->
             <td width="70%" valign="top">
 
-                <h2>SEKOLAHKU</h2>
+                <h2>BERITA KRAKATAU</h2>
 
-                <p class="deskripsi">
-                    AKU AHMAD FAHRY ILHAMI KELAS 11 DKV 2.
-                    AKU BERSEKOLAH DI SMKN 1 KOTA TANGERANG.
-                    ADA BEBERAPA JURUSAN DI SEKOLAHKU YAITU
-                    DKV, MPLB, TJKT, PEMASARAN, TKL, DAN AKL.
-                </p>
-
-                <img
-                    src="IMG_20260928_120504.jpg"
-                    alt="Foto sekolah"
-                    class="foto-sekolah"
-                >
+                <ul class="berita">
+                    <li>
+                        Gunung Anak Krakatau di Selat Sunda mengalami
+                        serangkaian erupsi besar yang memuncak pada
+                        tanggal 4 hingga 6 September 2026. Letusan ini
+                        mengeluarkan abu vulkanik pekat, memuntahkan
+                        lava pijar, serta memicu suara dentuman keras
+                        yang terdengar hingga beberapa kilometer.
+                    </li>
+                </ul>
 
             </td>
 
@@ -257,7 +250,6 @@
             </td>
 
         </tr>
-
     </table>
 
     <!-- FOOTER -->
