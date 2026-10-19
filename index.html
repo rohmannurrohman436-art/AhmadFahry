@@ -1,78 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website FAHRY</title>
-        <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #edf2f5;
-    color: #800000;
-}
 
-table {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
-}
-<head>
+    <style>
+        /* PENGATURAN DASAR */
+        * {
+            box-sizing: border-box;
+        }
 
-a:hover {
-    color: #b71c1c;
-}
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #edf2f5;
+            color: #333333;
+            line-height: 1.6;
+        }
 
+        /* TABEL */
+        table {
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
 
+        /* HEADER */
+        .header {
+            background-color: #800000;
+            color: #ffffff;
+            text-align: center;
+        }
 
+        .header h1 {
+            margin-bottom: 5px;
+            font-size: 36px;
+        }
 
-        
-    table {
-        border-radius: 15px;
-        overflow: hidden;
-    }
+        .header i {
+            color: #ffe0e0;
+        }
+
+        /* MENU */
+        .menu {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        a {
+            color: #800000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #e53935;
+            text-decoration: underline;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+
+        /* KONTEN UTAMA */
+        .konten {
+            width: 100%;
+        }
+
+        .konten td {
+            padding: 18px;
+            vertical-align: top;
+        }
+
+        h2 {
+            color: #800000;
+        }
+
+        .konten h2 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        /* TANGGAL BERITA */
+        .tanggal {
+            color: #777777;
+            font-size: 14px;
+        }
+
+        /* GARIS PEMBATAS */
+        hr {
+            border: none;
+            border-top: 1px solid #dddddd;
+            margin: 25px 0;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background-color: #e0f2f1;
+            color: #333333;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #00695c;
+        }
+
+        .sidebar a {
+            color: #00695c;
+            overflow-wrap: anywhere;
+        }
+
+        .sidebar a:hover {
+            color: #004d40;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        /* TAUTAN SELANJUTNYA */
+        .selanjutnya {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #800000;
+            color: #ffffff;
+            border-radius: 6px;
+        }
+
+        .selanjutnya:hover {
+            background-color: #b71c1c;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* FOOTER */
+        .footer td {
+            padding: 12px;
+            text-align: right;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .footer h2 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        /* TAMPILAN HP */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 27px;
+            }
+
+            .menu td {
+                padding: 8px;
+            }
+
+            .menu a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .konten td {
+                padding: 10px;
+            }
+
+            .konten h2 {
+                font-size: 19px;
+            }
+        }
     </style>
+</head>
 
 <body>
 
     <!-- HEADER -->
     <table width="100%" border="1" cellspacing="0" cellpadding="20">
-        <tr bgcolor="##FF0000">
-            <td align="center" height="150">
+        <tr class="header">
+            <td height="150">
                 <h1>Website Fahry</h1>
                 <i>jangan melirik nnti tertarik.</i>
-                <style>
-        
-    table {
-        border-radius: 15px;
-        overflow: hidden;
-    }
-    </style>l
             </td>
         </tr>
     </table>
 
     <!-- MENU -->
-    <table width="90%" border="1" cellspacing="0" cellpadding="5">
+    <table class="menu" width="90%" border="1" cellspacing="0" cellpadding="5">
         <tr>
             <td>
-                <a href="index.html">Beranda</a> <Tentang saya.html</Tentang>
-                   
-                
-                <a href="Tentang saya.html">Tentang Saya</a> 
-                <a href="Sekolahku.html">Sekolahku</a> 
-                <a href="Syair lagu.html">Syair Lagu</a
+                <a href="index.html">Beranda</a>
+                <a href="Tentang saya.html">Tentang Saya</a>
+                <a href="Sekolahku.html">Sekolahku</a>
+                <a href="Syair lagu.html">Syair Lagu</a>
             </td>
         </tr>
     </table>
 
     <!-- ISI WEBSITE -->
-    <table width="100%" border="1" cellspacing="0" cellpadding="8">
+    <table class="konten" border="1" cellspacing="0" cellpadding="8">
         <tr>
 
             <!-- BAGIAN UTAMA -->
             <td width="70%" valign="top">
 
-                <h2></h2>
+                <h2>Informasi Pembelajaran</h2>
 
-                <i>Senin, 7 September 2026</i>
+                <span class="tanggal">
+                    <i>Senin, 7 September 2026</i>
+                </span>
 
                 <p>
                     Karena adanya erupsi anak gunung Krakatau,
@@ -86,13 +241,17 @@ a:hover {
                     ditentukan oleh guru.
                 </p>
 
-                <a href="Selanjutnya.html">Selanjutnya</a>
+                <a class="selanjutnya" href="Selanjutnya.html">
+                    Selanjutnya
+                </a>
 
                 <hr>
 
-                
+                <h2>Lomba Video Pariwisata</h2>
 
-                <i>Jumat, 4 September 2026</i>
+                <span class="tanggal">
+                    <i>Jumat, 4 September 2026</i>
+                </span>
 
                 <p>
                     Telah dibuka pendaftaran lomba pembuatan
@@ -102,14 +261,16 @@ a:hover {
                     pariwisata yang ada di kota Tangerang.
                 </p>
 
-                <a href="Selanjutnya 1.html">Selanjutnya</a>
+                <a class="selanjutnya" href="Selanjutnya 1.html">
+                    Selanjutnya
+                </a>
 
             </td>
 
             <!-- SIDEBAR -->
-            <td width="30%" bgcolor="#088F8F" valign="top">
+            <td class="sidebar" width="30%" valign="top">
 
-                <h3>Tautan eksternal</h3>
+                <h3>Tautan Eksternal</h3>
 
                 <ol>
                     <li>
@@ -129,25 +290,26 @@ a:hover {
                             Google
                         </a>
                     </li>
-                    <a href="https://www.instagram.com/ahmadfahryi?stkn=MWlsaWxtdmZvY3JzeA==">4.instagram</a>
-                    
-                   
+
+                    <li>
+                        <a href="https://www.instagram.com/ahmadfahryi?stkn=MWlsaWxtdmZvY3JzeA==">
+                            Instagram
+                        </a>
+                    </li>
                 </ol>
 
             </td>
-
         </tr>
     </table>
 
     <!-- FOOTER -->
-    <table width="100%" border="1" cellspacing="0" cellpadding="5">
+    <table class="footer" width="100%" border="1" cellspacing="0" cellpadding="5">
         <tr>
             <td align="right">
-                .
+                @Ahmad Fahry ilhami
             </td>
         </tr>
     </table>
 
 </body>
 </html>
-
