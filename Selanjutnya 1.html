@@ -1,77 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Website FAHRY - Berita Krakatau</title>
+    <title>Website FAHRY</title>
 
     <style>
-        /* PENGATURAN DASAR */
         body {
             font-family: Arial, sans-serif;
             background-color: #edf2f5;
             color: #800000;
             margin: 0;
             padding: 20px;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
-        /* TABEL */
         table {
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
             border-collapse: collapse;
-            background-color: #ffffff;
+            box-shadow: 0 4px 14px rgba(25, 40, 55, 0.12);
+            background-color: white;
             margin-bottom: 20px;
         }
 
         /* HEADER */
         .header {
             background-color: #800000;
-            color: #ffffff;
+            color: white;
         }
 
         .header h1 {
-            margin-bottom: 5px;
             font-size: 36px;
+            margin-bottom: 5px;
         }
 
         .header i {
-            color: #ffe0e0;
+            color: #ffcccc;
         }
 
-        /* MENU NAVIGASI */
+        /* MENU */
         .menu {
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
 
         .menu td {
-            padding: 12px;
             text-align: center;
+            padding: 12px;
         }
 
         a {
             color: #800000;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
+            margin: 5px 10px;
             transition: 0.3s;
         }
 
         a:hover {
-            color: #b71c1c;
+            color: #e53935;
             text-decoration: underline;
         }
 
-        .menu a {
-            display: inline-block;
-            margin: 5px 10px;
-        }
-
-        /* KONTEN BERITA */
+        /* ISI WEBSITE */
         .konten {
             width: 100%;
         }
@@ -82,50 +77,36 @@
         }
 
         .konten h2 {
-            margin-top: 0;
             color: #800000;
         }
 
-        .berita {
-            padding-left: 25px;
-            text-align: justify;
-        }
-
-        .berita li {
-            padding-left: 5px;
-            margin-bottom: 15px;
+        .konten li {
+            margin-bottom: 10px;
         }
 
         /* SIDEBAR */
         .sidebar {
             background-color: #e0f2f1;
-            color: #333333;
         }
 
         .sidebar h3 {
-            margin-top: 0;
             color: #00695c;
         }
 
         .sidebar a {
             color: #00695c;
-            overflow-wrap: anywhere;
         }
 
         .sidebar a:hover {
             color: #004d40;
         }
 
-        .sidebar li {
-            margin-bottom: 10px;
-        }
-
         /* FOOTER */
         .footer td {
             background-color: #333333;
-            color: #ffffff;
+            color: white;
             text-align: right;
-            padding: 12px;
+            padding: 10px;
         }
 
         /* TAMPILAN HP */
@@ -138,13 +119,16 @@
                 font-size: 27px;
             }
 
+            .menu {
+                width: 100%;
+            }
+
             .menu td {
-                padding: 8px;
+                padding: 5px;
             }
 
             .menu a {
                 margin: 5px;
-                font-size: 14px;
             }
 
             .konten td {
@@ -154,10 +138,6 @@
             .konten h2 {
                 font-size: 20px;
             }
-
-            .berita {
-                padding-left: 20px;
-            }
         }
     </style>
 </head>
@@ -166,21 +146,17 @@
 
     <!-- HEADER -->
     <table class="header" width="100%" border="1"
-        cellspacing="0" cellpadding="20">
-
+           cellspacing="0" cellpadding="20">
         <tr>
             <td align="center" height="150">
                 <h1>Website Fahry</h1>
                 <i>jangan melirik nnti tertarik.</i>
             </td>
         </tr>
-
     </table>
 
     <!-- MENU -->
-    <table class="menu" width="90%" border="1"
-        cellspacing="0" cellpadding="5">
-
+    <table class="menu" border="1" cellspacing="0" cellpadding="5">
         <tr>
             <td>
                 <a href="index.html">Beranda</a>
@@ -189,28 +165,23 @@
                 <a href="Syair lagu.html">Syair Lagu</a>
             </td>
         </tr>
-
     </table>
 
     <!-- ISI WEBSITE -->
-    <table class="konten" border="1"
-        cellspacing="0" cellpadding="8">
-
+    <table class="konten" border="1" cellspacing="0" cellpadding="8">
         <tr>
 
             <!-- BAGIAN UTAMA -->
             <td width="70%" valign="top">
 
-                <h2>BERITA KRAKATAU</h2>
+                <h2>LOMBA DKV</h2>
 
-                <ul class="berita">
+                <ul>
                     <li>
-                        Gunung Anak Krakatau di Selat Sunda mengalami
-                        serangkaian erupsi besar yang memuncak pada
-                        tanggal 4 hingga 6 September 2026. Letusan ini
-                        mengeluarkan abu vulkanik pekat, memuntahkan
-                        lava pijar, serta memicu suara dentuman keras
-                        yang terdengar hingga beberapa kilometer.
+                        SMK mengadakan lomba DKV. Lomba ini sangat
+                        menguntungkan bagi murid-murid yang berprestasi
+                        dan menjadi ajang untuk menunjukkan bakat dalam
+                        bidang kesenian digital dan budaya.
                     </li>
                 </ul>
 
@@ -248,20 +219,17 @@
                 </ol>
 
             </td>
-
         </tr>
     </table>
 
     <!-- FOOTER -->
     <table class="footer" width="100%" border="1"
-        cellspacing="0" cellpadding="5">
-
+           cellspacing="0" cellpadding="5">
         <tr>
-            <td align="right">
+            <td>
                 @Ahmad fahry ilhami
             </td>
         </tr>
-
     </table>
 
 </body>
